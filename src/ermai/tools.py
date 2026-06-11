@@ -57,7 +57,7 @@ class ChatGPSimon:
         else:
             return response.lower()
 
-class Lumina:
+class Model:
     # Lightweight general-purpose assistant.
     def __init__(self, api_key, instruction="You are a helpful assistant.", chat=False):
         self.client = Groq(api_key=api_key)
@@ -77,27 +77,14 @@ class Lumina:
         else:
             return response.lower()
 
-class Translate:
-    """Pure functional translation module."""
-    def __init__(self, api_key):
-        self.client = Groq(api_key=api_key)
-        self.model = "llama-3.1-8b-instant"
 
-    def translate(self, text: str, target: str, source: str = "Auto") -> str:
-        messages = [
-            {"role": "system", "content": f"Translate from {source} to {target}. Output ONLY translation."},
-            {"role": "user", "content": text}
-        ]
-        completion = self.client.chat.completions.create(model=self.model, messages=messages)
-        return completion.choices[0].message.content
-
-def manual(): # How to use ErmAI, checking for updates
-	print("==== ErmAI Manual ====")
+def manual(): # OUTDATED!!!
+	print("==== ErmAI Tools Manual ====")
 	print("\n[!] IMPORTANT\nYou need an API key from https://console.groq.com to run ErmAI applications!\n\n")
-	print("Lumina - Usage\nai = ermai.Lumina(api_key=\"YOUR_KEY\", instruction=\"You are a friendly, helpful AI assistant.\")\nprint(ai.prompt(\"Hello!\"))")
+	print("Model - Usage\nai = ermai.Model(api_key=\"YOUR_KEY\", instruction=\"You are a friendly, helpful AI assistant.\")\nprint(ai.prompt(\"Hello!\"))")
 	print("\nChatGPSimon - Usage\nai = ermai.ChatGPSimon(api_key=\"YOUR_KEY\")\nprint(ai.prompt(\"Sing a song about a free pawn\")")
-	print("\nTranslate - Usage\ninterpreter = ermai.Translate(api_key=\"YOUR_KEY\")\nprint(interpreter.translate(text=\"Hello, world\", source=\"English\", target=\"German\"))")
 
 def version():
-    print("2.2.5 - Billy Update")
+    print("TESTS IN PROGRESS - 3.1 Alpha - Wrappers Update")
+    print("Working Version: 2.2.5 - Billy Update")
 
