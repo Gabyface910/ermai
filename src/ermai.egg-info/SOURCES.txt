@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/ermai/__init__.py
+src/ermai/billy.py
+src/ermai/tools.py
+src/ermai/wrappers.py
+src/ermai.egg-info/PKG-INFO
+src/ermai.egg-info/SOURCES.txt
+src/ermai.egg-info/dependency_links.txt
+src/ermai.egg-info/requires.txt
+src/ermai.egg-info/top_level.txt

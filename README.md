@@ -43,9 +43,11 @@ pip install ermai
 > [!WARNING]
 > ESW is in __alpha testing__! This means it is beginning to be tested.
 > If there is an ESW problem, tell me in the discussions.
+
 ErmAI is making OpenAI, Anthropic, and Google AI more available to the average coder!
 Why fiddle with `client.chat.completions.create()` when you have ErmAI in your hands?
 Use the new wrappers to make those APIs easy to use! Choose from models like GPT-5, Gemini 3, and Claude Opus!
+
 > [!IMPORTANT]
 > For each service, a respective API key is needed. Get yours for free on the services' platforms.
 
