@@ -1,1 +1,1 @@
-from .tools import ChatGPSimon, Lumina, Translate, manual, version
+from .tools import ChatGPSimon, Model, manual, version

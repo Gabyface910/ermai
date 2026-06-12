@@ -59,10 +59,10 @@ class ChatGPSimon:
 
 class Model:
     # Lightweight general-purpose assistant.
-    def __init__(self, api_key, instruction="You are a helpful assistant.", chat=False):
+    def __init__(self, api_key, instruction="You are a helpful AI assistant.", chat=False):
         self.client = Groq(api_key=api_key)
         self.chat = chat
-        self.model = "llama-3.1-8b-instant"
+        self.model = "llama-3.3-70b-versatile"
         self.memory = [{"role": "system", "content": instruction}]
 
     def prompt(self, query: str) -> str:
@@ -85,6 +85,6 @@ def manual(): # OUTDATED!!!
 	print("\nChatGPSimon - Usage\nai = ermai.ChatGPSimon(api_key=\"YOUR_KEY\")\nprint(ai.prompt(\"Sing a song about a free pawn\")")
 
 def version():
-    print("TESTS IN PROGRESS - 3.1 Alpha - Wrappers Update")
+    print("TESTS IN PROGRESS - 3.1.2 Alpha - Wrappers Update")
     print("Working Version: 2.2.5 - Billy Update")
 
