@@ -85,6 +85,6 @@ def manual(): # OUTDATED!!!
 	print("\nChatGPSimon - Usage\nai = ermai.ChatGPSimon(api_key=\"YOUR_KEY\")\nprint(ai.prompt(\"Sing a song about a free pawn\")")
 
 def version():
-    print("TESTS IN PROGRESS - 3.1.2 Alpha - Wrappers Update")
+    print("TESTS IN PROGRESS - 3.1.3 Alpha - Wrappers Update")
     print("Working Version: 2.2.5 - Billy Update")
 
